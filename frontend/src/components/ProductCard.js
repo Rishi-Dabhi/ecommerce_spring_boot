@@ -25,7 +25,7 @@ function ProductCard({ product, onViewDetails }) {
         </h3>
         <p className="product-description">{product.description}</p>
         <div className="product-footer">
-          <span className="product-price">${product.price.toFixed(2)}</span>
+          <span className="product-price">£{product.price.toFixed(2)}</span>
           <span className="product-quantity">
             {isOutOfStock ? 'Out of Stock' : `Stock: ${product.quantity}`}
           </span>

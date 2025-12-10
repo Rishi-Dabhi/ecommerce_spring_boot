@@ -38,7 +38,7 @@ function Cart({ onNavigate }) {
             </div>
             <div className="cart-item-details">
               <div className="cart-item-name">{item.name}</div>
-              <div className="cart-item-price">${item.price.toFixed(2)} each</div>
+              <div className="cart-item-price">£{item.price.toFixed(2)} each</div>
               <div className="cart-item-quantity">
                 <label>Quantity:</label>
                 <input
@@ -54,7 +54,7 @@ function Cart({ onNavigate }) {
             </div>
             <div style={{ textAlign: 'right', marginLeft: '1rem' }}>
               <div style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '1rem' }}>
-                ${(item.price * item.cartQuantity).toFixed(2)}
+                £{(item.price * item.cartQuantity).toFixed(2)}
               </div>
               <button
                 className="cart-item-remove"

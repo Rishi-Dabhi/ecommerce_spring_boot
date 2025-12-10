@@ -34,6 +34,7 @@ ecommerce_spring_boot/
 - **Shopping Cart** - Add/remove items and manage quantities
 - **Order Management** - Place orders
 - **Inventory Management** - Automatic quantity reduction on purchase
+- **Manager Panel** - Complete product and order management interface
 - **RESTful API** - Complete REST API for all operations
 - **Responsive UI** - Modern React frontend
 
@@ -103,6 +104,50 @@ ecommerce_spring_boot/
 - `POST /api/orders` - Create order
 - `GET /api/orders/{id}` - Get order by ID
 - `GET /api/orders` - Get all orders
+
+### Manager
+- `POST /api/manager/login` - Manager authentication
+- `GET /api/manager/products` - Get all products (manager view)
+- `POST /api/manager/products` - Add new product
+- `PUT /api/manager/products/{id}` - Update product details
+- `DELETE /api/manager/products/{id}` - Delete product
+- `GET /api/manager/orders` - View all customer orders
+
+## Manager Panel
+
+The application includes a complete manager dashboard for product and order management.
+
+### Manager Login
+
+- Click the **👨‍💼 Manager** button in the top-right navbar
+- Enter credentials:
+  - **Username**: `admin`
+  - **Password**: `password123`
+
+### Manager Dashboard Features
+
+#### 1. **Manage Products Tab**
+   - **View Products**: See all products in a table format with ID, name, price, and quantity
+   - **Add New Product**: 
+     - Click "+ Add New Product" button
+     - Fill in product details:
+       - Product Name
+       - Description (detailed features)
+       - Price (£)
+       - Quantity (stock)
+       - Image URL
+     - Click "Add Product" to create
+   - **Edit Product**:
+     - Click the "Edit" button next to any product
+     - Modify all product details
+     - Click "Update Product" to save changes
+   - **Delete Product**:
+     - Click the "Delete" button next to any product
+     - Confirm deletion in popup
+
+#### 2. **View Orders Tab**
+   - Displays all customer orders in a detailed table
+   - Real-time view of all sales
 
 ## How It Works
 

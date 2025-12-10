@@ -32,7 +32,7 @@ function ProductDetail({ product, onClose }) {
             )}
           </div>
           <h2>{product.name}</h2>
-          <div className="product-detail-price">${product.price.toFixed(2)}</div>
+          <div className="product-detail-price">£{product.price.toFixed(2)}</div>
           <p className="product-detail-description">{product.description}</p>
           <div className="product-detail-stock">
             <strong>Stock Available:</strong> {product.quantity} items

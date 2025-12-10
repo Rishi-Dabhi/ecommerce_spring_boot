@@ -235,7 +235,7 @@ function Checkout({ onNavigate, onOrderSuccess }) {
               {item.name} × {item.cartQuantity}
             </div>
             <div className="checkout-item-price">
-              ${(item.price * item.cartQuantity).toFixed(2)}
+              £{(item.price * item.cartQuantity).toFixed(2)}
             </div>
           </div>
         ))}
