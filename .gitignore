@@ -23,6 +23,7 @@ target/
 .vscode/
 
 # Frontend - Node
+frontend/node/
 frontend/node_modules/
 frontend/npm
 frontend/npm.cmd
